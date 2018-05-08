@@ -1,10 +1,10 @@
 ---
 layout: archive
-permalink: /data-science-bootcamp/
-title: "Data Science Bootcamp"
+permalink: /data-science/
+title: "Data Science Posts by Tags"
 author_profile: true
 header:
-  image: "/images/background-image.jpg"
+  image: "/images/data-science-header.jpg"
 ---
 
 {% include base_path %}
