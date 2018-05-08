@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /data-science-bootcamp/
-title: "Machine Learning Posts by Tags"
+title: "Data Science Bootcamp"
 author_profile: true
 header:
   image: "/images/background-image.jpg"
