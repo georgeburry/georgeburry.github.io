@@ -7,52 +7,24 @@ header:
 excerpt: "Machine Learning, XGBoost, time-series"
 mathjax: ""
 ---
-
-# Time-series Prediction using XGBoost Regressor
-
 ## Introduction
 XGBoost is a powerful and versatile tool, which has enabled many Kaggle competition participants to achieve winning scores. How well does XGBoost perform when used to predict future values of a time-series? This was put to the test by aggregating datasets containing time-series from three Kaggle competitions. Random samples were extracted from each time-series, with lags of t-10 and a target value (forecast horizon) of t+5. Up until now, the results have been interesting and warrant further work.
-
-## Stand-alone functions
-```python
-# creates training examples for supervised learning from a time-series (i.e. X: t-n, t-1, t; y: t+1)
-# lag is the number of preceding points used for the prediction (X), and lead is the forecast horizon (y)
-def timeseries_to_supervised(data, lag=1, lead=1):
-    df = pd.DataFrame(data)
-    columns = [df.shift(-i) for i in range(0, lag+1)]
-    df_X = pd.concat(columns, axis=1)
-    df_all = pd.concat([df_X, df.shift(-(lead + lag))], axis=1)
-    df_all = df_all.iloc[:-(lead + lag), :]
-    df_all.fillna(0, inplace=True)
-    return df_all
-
-# saving a model
-def save_model(model, filename):
-    return joblib.dump(model, filename)
-
-# loading a model
-def load_model(filename):
-    return joblib.load(filename)
-
-def calculate_SMAPE(y, y_hat):
-    print('SMAPE score: ', 100 / len(y) * np.sum(np.abs(y_hat - y) / ((np.abs(y) + np.abs(y_hat))/2)))
-```
 
 ## Data loading and preparation
 All datasets were obtained from Kaggle competitions.
 
 ### Wikipedia views data
-Web Traffic Time Series Forecasting: [link][https://www.kaggle.com/c/web-traffic-time-series-forecasting]
+Web Traffic Time Series Forecasting: https://www.kaggle.com/c/web-traffic-time-series-forecasting
 
 Time-series data from 1000 pages used.
 
 ### Supermarkets sales data
-Corporación Favorita Grocery Sales Forecasting: [link][https://www.kaggle.com/c/favorita-grocery-sales-forecasting]
+Corporación Favorita Grocery Sales Forecasting: https://www.kaggle.com/c/favorita-grocery-sales-forecasting
 
 Time-series data for 1000 items used.
 
 ### Restaurant vistors data
-Recruit Restaurant Visitor Forecasting: [link][https://www.kaggle.com/c/recruit-restaurant-visitor-forecasting]
+Recruit Restaurant Visitor Forecasting: https://www.kaggle.com/c/recruit-restaurant-visitor-forecasting
 
 Time-series data for 100 restaurant outlets used.
 
