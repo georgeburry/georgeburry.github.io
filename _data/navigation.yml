@@ -4,7 +4,6 @@ main:
     url: /about/
   - title: "Data Science Bootcamp"
     url: /data-science-bootcamp/
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
