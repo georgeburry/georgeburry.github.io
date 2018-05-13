@@ -1,0 +1,5340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    td.td1 {width: 35.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 36.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 113.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 462.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {width: 389.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {width: 46.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td8 {width: 118.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td9 {width: 58.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td10 {width: 82.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td11 {width: 63.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td12 {width: 5.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td13 {width: 53.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td14 {width: 44.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td15 {width: 88.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td16 {width: 62.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td17 {width: 89.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td18 {width: 39.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td19 {width: 37.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td20 {width: 89.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td21 {width: 142.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td22 {width: 32.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td23 {width: 81.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td24 {width: 182.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td25 {width: 96.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td26 {width: 145.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td27 {width: 201.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td28 {width: 392.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td29 {width: 179.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td30 {width: 174.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td31 {width: 100.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td32 {width: 248.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td33 {width: 40.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td34 {width: 119.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td35 {width: 199.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td36 {width: 166.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td37 {width: 115.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td38 {width: 279.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td39 {width: 77.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td40 {width: 68.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td41 {width: 27.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td42 {width: 45.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td43 {width: 111.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td44 {width: 41.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td45 {width: 159.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td46 {width: 399.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td47 {width: 66.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td48 {width: 87.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td49 {width: 61.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td50 {width: 453.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td51 {width: 177.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td52 {width: 125.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td53 {width: 84.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td54 {width: 98.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td55 {width: 9.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td56 {width: 70.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td57 {width: 116.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td58 {width: 55.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td59 {width: 153.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td60 {width: 74.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td61 {width: 95.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td62 {width: 70.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td63 {width: 78.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td64 {width: 186.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td65 {width: 138.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td66 {width: 79.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td67 {width: 263.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td68 {width: 139.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td69 {width: 188.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td70 {width: 75.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td71 {width: 159.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td72 {width: 79.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td73 {width: 126.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td74 {width: 78.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td75 {width: 375.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td76 {width: 88.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td77 {width: 195.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td78 {width: 109.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td79 {width: 35.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td80 {width: 68.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td81 {width: 105.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td82 {width: 137.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td83 {width: 55.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td84 {width: 67.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td85 {width: 103.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td86 {width: 94.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td87 {width: 140.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td88 {width: 252.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td89 {width: 101.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td90 {width: 56.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td91 {width: 105.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td92 {width: 149.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td93 {width: 189.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td94 {width: 119.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td95 {width: 188.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td96 {width: 146.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td97 {width: 104.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td98 {width: 97.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td99 {width: 75.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td100 {width: 140.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td101 {width: 207.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td102 {width: 186.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td103 {width: 154.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td104 {width: 47.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td105 {width: 167.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td106 {width: 158.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td107 {width: 196.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td108 {width: 235.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td109 {width: 152.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td110 {width: 180.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td111 {width: 76.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td112 {width: 106.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td113 {width: 122.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td114 {width: 73.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td115 {width: 49.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td116 {width: 56.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td117 {width: 69.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td118 {width: 123.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td119 {width: 161.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td120 {width: 111.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td121 {width: 182.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td122 {width: 67.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td123 {width: 29.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td124 {width: 192.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td125 {width: 148.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td126 {width: 160.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td127 {width: 75.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td128 {width: 84.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td129 {width: 82.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td130 {width: 108.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td131 {width: 89.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td132 {width: 81.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td133 {width: 91.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td134 {width: 66.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td135 {width: 110.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td136 {width: 66.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td137 {width: 59.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td138 {width: 61.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td139 {width: 66.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td140 {width: 96.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td141 {width: 37.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td142 {width: 140.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td143 {width: 126.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td144 {width: 126.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td145 {width: 92.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td146 {width: 92.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td147 {width: 105.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td148 {width: 206.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td149 {width: 153.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td150 {width: 120.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td151 {width: 128.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td152 {width: 126.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td153 {width: 141.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td154 {width: 84.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td155 {width: 82.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td156 {width: 141.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td157 {width: 64.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td158 {width: 217.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td159 {width: 152.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td160 {width: 49.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td161 {width: 18.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td162 {width: 129.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td163 {width: 112.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td164 {width: 111.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td165 {width: 150.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td166 {width: 121.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td167 {width: 178.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td168 {width: 172.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td169 {width: 95.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td170 {width: 108.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td171 {width: 118.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td172 {width: 227.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td173 {width: 55.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td174 {width: 79.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td175 {width: 94.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td176 {width: 410.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td177 {width: 243.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td178 {width: 86.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td179 {width: 160.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td180 {width: 92.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td181 {width: 145.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td182 {width: 119.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td183 {width: 236.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td184 {width: 161.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td185 {width: 59.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td186 {width: 114.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td187 {width: 78.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td188 {width: 167.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td189 {width: 104.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td190 {width: 112.4px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td191 {width: 143.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td192 {width: 117.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td193 {width: 181.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td194 {width: 87.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td195 {width: 208.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td196 {width: 63.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td197 {width: 80.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td198 {width: 338.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td199 {width: 134.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td200 {width: 71.8px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td201 {width: 244.2px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td202 {width: 93.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td203 {width: 247.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td204 {width: 81.3px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td205 {width: 293.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td206 {width: 78.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td207 {width: 254.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td208 {width: 54.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td209 {width: 234.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td210 {width: 36.7px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td211 {width: 60.6px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td212 {width: 13.1px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td213 {width: 43.5px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td214 {width: 40.9px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;html&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p1"><span class="s1">&lt;head&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p1"><span class="s1">&lt;meta charset="utf-8"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"&gt;&lt;/script&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p1"><span class="s1">&lt;style&gt;input.vertical { -webkit-appearance: slider-vertical; writing-mode: bt-lr; }</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">#header {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p1"><span class="s1">background-color:black;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td9">
+        <p class="p1"><span class="s1">color:white;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td10">
+        <p class="p1"><span class="s1">text-align:center;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p1"><span class="s1">padding:5px;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p1"><span class="s1">#controls {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p1"><span class="s1">float:left;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">padding-top:90px;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td16">
+        <p class="p1"><span class="s1">#histogram {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p1"><span class="s1">float:left;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td17">
+        <p class="p1"><span class="s1">padding-left:70px;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">padding-top:30px;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;body&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p1"><span class="s1">&lt;div id="header"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td21">
+        <p class="p1"><span class="s1">&lt;h1&gt;Sejm VII kadencji&lt;/h1&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td23">
+        <p class="p1"><span class="s1">&lt;div id="seats"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td24">
+        <p class="p1"><span class="s1">&lt;svg width=1000 height=500&gt;&lt;/svg&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;div id="controls"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td26">
+        <p class="p1"><span class="s1">&lt;select id="parties"&gt;&lt;/select&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;p id="sliderText"&gt;term threshold: 1&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td28">
+        <p class="p1"><span class="s1">&lt;input type=range min=1 max=7 value=1 class=vertical orient=vertical&gt;&lt;/input&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p1"><span class="s1">&lt;button id='party'&gt;by party&lt;/button&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td30">
+        <p class="p1"><span class="s1">&lt;button id='term'&gt;by term&lt;/button&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td26">
+        <p class="p1"><span class="s1">&lt;button id='PO'&gt;PO&lt;/button&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td31">
+        <p class="p1"><span class="s1">&lt;div id='histogram'&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td32">
+        <p class="p1"><span class="s1">&lt;svg width=400 height=220 id='histogram'&gt;&lt;/svg&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td33">
+        <p class="p1"><span class="s1">&lt;script&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td34">
+        <p class="p1"><span class="s1">var svg = d3.select('svg')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td35">
+        <p class="p1"><span class="s1">var svgHisto = d3.select('svg#histogram')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td36">
+        <p class="p1"><span class="s1">function sortPoints(byWhat, a, b){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td37">
+        <p class="p1"><span class="s1">if (byWhat == 'terms') {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td38">
+        <p class="p1"><span class="s1">byparty = d3.descending(+a['recent-mp'], +b['recent-mp'])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td39">
+        <p class="p1"><span class="s1">if (byparty != 0)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td40">
+        <p class="p1"><span class="s1">return byparty</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td41">
+        <p class="p1"><span class="s1">else {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p1"><span class="s1">if (a.club &lt; b.club)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td42">
+        <p class="p1"><span class="s1">return -1;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td43">
+        <p class="p1"><span class="s1">else if (a.club &gt; b.club)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td44">
+        <p class="p1"><span class="s1">return 1;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td41">
+        <p class="p1"><span class="s1">else {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td45">
+        <p class="p1"><span class="s1">return d3.ascending(a.dob,b.dob)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td41">
+        <p class="p1"><span class="s1">else {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p1"><span class="s1">if (a.club &lt; b.club)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td42">
+        <p class="p1"><span class="s1">return -1;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p1"><span class="s1">if (a.club &gt; b.club)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td44">
+        <p class="p1"><span class="s1">return 1;<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td46">
+        <p class="p1"><span class="s1">return d3.descending(+a['recent-mp'], +b['recent-mp']) || d3.ascending(a.dob,b.dob)<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td47">
+        <p class="p1"><span class="s1">var rows = 15</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td48">
+        <p class="p1"><span class="s1">var xSpacing = 25</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td48">
+        <p class="p1"><span class="s1">var ySpacing = 25</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td49">
+        <p class="p1"><span class="s1">var scale = 3<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td50">
+        <p class="p1"><span class="s1">//read in the database, sort by number of terms in office, then by parliamentary club (i.e. party)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td51">
+        <p class="p1"><span class="s1">d3.csv('processed.csv', function(db){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td52">
+        <p class="p1"><span class="s1">byRecentTerm = d3.nest()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td54">
+        <p class="p1"><span class="s1">return d['recent-mp']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td56">
+        <p class="p1"><span class="s1">return d['club']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td57">
+        <p class="p1"><span class="s1">.sortKeys(d3.ascending)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td58">
+        <p class="p1"><span class="s1">.entries(db)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td59">
+        <p class="p1"><span class="s1">function getTotalMPs(dataSet){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td60">
+        <p class="p1"><span class="s1">return d3.nest()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td54">
+        <p class="p1"><span class="s1">return d['recent-mp']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td61">
+        <p class="p1"><span class="s1">.rollup(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td62">
+        <p class="p1"><span class="s1">return d.length</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td57">
+        <p class="p1"><span class="s1">.sortKeys(d3.ascending)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td63">
+        <p class="p1"><span class="s1">.entries(dataSet)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td64">
+        <p class="p1"><span class="s1">//total mp numbers for each term value</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td65">
+        <p class="p1"><span class="s1">mpTotals = getTotalMPs(db)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td66">
+        <p class="p1"><span class="s1">var sumMPs = 0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td67">
+        <p class="p1"><span class="s1">mpTotals.forEach(function(d){ sumMPs += d.values})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td68">
+        <p class="p1"><span class="s1">histoScale = d3.scale.linear()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td69">
+        <p class="p1"><span class="s1">.domain([0, d3.max(mpTotals).values])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td70">
+        <p class="p1"><span class="s1">.range([0, 200])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td71">
+        <p class="p1"><span class="s1">histoVertScale = d3.scale.linear()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td72">
+        <p class="p1"><span class="s1">.domain([0, 15])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td73">
+        <p class="p1"><span class="s1">.range([0, 0.15*sumMPs])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td74">
+        <p class="p1"><span class="s1">var linesArr = []</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td75">
+        <p class="p1"><span class="s1">for (var i = 1; i&lt;Math.floor(d3.max(mpTotals).values/(0.05*sumMPs)); i++) {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td76">
+        <p class="p1"><span class="s1">linesArr.push(i*5)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td77">
+        <p class="p1"><span class="s1">histVertLines = svgHisto.selectAll('line')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td78">
+        <p class="p1"><span class="s1">.data(linesArr, lineVal)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('line')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">.attr('y1', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td82">
+        <p class="p1"><span class="s1">return 200-histoVertScale(d)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">.attr('y2', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td82">
+        <p class="p1"><span class="s1">return 200-histoVertScale(d)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">.attr('x1', 0)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td84">
+        <p class="p1"><span class="s1">.attr('x2', 400)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td85">
+        <p class="p1"><span class="s1">.style('stroke', 'black')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td86">
+        <p class="p1"><span class="s1">.style('opacity', 0.6)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td87">
+        <p class="p1"><span class="s1">.attr('stroke-dasharray', (5,5))</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td88">
+        <p class="p1"><span class="s1">histogramGroup = svgHisto.selectAll('#histoGroup')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td89">
+        <p class="p1"><span class="s1">.data(byRecentTerm)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td90">
+        <p class="p1"><span class="s1">.append('g')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td91">
+        <p class="p1"><span class="s1">.attr('id', 'histoGroup')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td92">
+        <p class="p1"><span class="s1">.attr('transform', function(d, i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td93">
+        <p class="p1"><span class="s1">return 'translate (' + (30+i*50) + ', 200)'</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td94">
+        <p class="p1"><span class="s1">function changeHisto() {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td95">
+        <p class="p1"><span class="s1">var val = selectedItem.property('value')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td96">
+        <p class="p1"><span class="s1">newdb = db.filter(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td97">
+        <p class="p1"><span class="s1">return d['club'] == val</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td98">
+        <p class="p1"><span class="s1">newData = d3.nest()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td54">
+        <p class="p1"><span class="s1">return d['recent-mp']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td56">
+        <p class="p1"><span class="s1">return d['club']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td57">
+        <p class="p1"><span class="s1">.sortKeys(d3.ascending)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td99">
+        <p class="p1"><span class="s1">.entries(newdb)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td100">
+        <p class="p1"><span class="s1">updateHist(newData, newdb)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td101">
+        <p class="p1"><span class="s1">function updateHist(newDataSet, newdb) {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td102">
+        <p class="p1"><span class="s1">var ytrac = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td103">
+        <p class="p1"><span class="s1">histogramGroup.selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td104">
+        <p class="p1"><span class="s1">.remove()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td105">
+        <p class="p1"><span class="s1">histogramGroup.data(newDataSet)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td106">
+        <p class="p1"><span class="s1">mpTotals = getTotalMPs(newdb)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td66">
+        <p class="p1"><span class="s1">var sumMPs = 0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td67">
+        <p class="p1"><span class="s1">mpTotals.forEach(function(d){ sumMPs += d.values})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td74">
+        <p class="p1"><span class="s1">var linesArr = []</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td75">
+        <p class="p1"><span class="s1">for (var i = 1; i&lt;Math.floor(d3.max(mpTotals).values/(0.05*sumMPs)); i++) {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td76">
+        <p class="p1"><span class="s1">linesArr.push(i*5)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td68">
+        <p class="p1"><span class="s1">histoScale = d3.scale.linear()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td69">
+        <p class="p1"><span class="s1">.domain([0, d3.max(mpTotals).values])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td70">
+        <p class="p1"><span class="s1">.range([0, 200])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td71">
+        <p class="p1"><span class="s1">histoVertScale = d3.scale.linear()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td107">
+        <p class="p1"><span class="s1">.domain([0, linesArr[linesArr.length-1]])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td108">
+        <p class="p1"><span class="s1">.range([0, linesArr[linesArr.length-1]*sumMPs])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td109">
+        <p class="p1"><span class="s1">console.log(histoVertScale(20))</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td103">
+        <p class="p1"><span class="s1">histogramGroup.selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td110">
+        <p class="p1"><span class="s1">.data(function(d) { return d.values; })</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td111">
+        <p class="p1"><span class="s1">.attr('width', 30)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td112">
+        <p class="p1"><span class="s1">.attr('fill', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td113">
+        <p class="p1"><span class="s1">return partyColors(d.key)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td114">
+        <p class="p1"><span class="s1">.attr('height', 0)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td115">
+        <p class="p1"><span class="s1">.attr('y', 0)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td116">
+        <p class="p1"><span class="s1">.transition()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td117">
+        <p class="p1"><span class="s1">.duration(500)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td118">
+        <p class="p1"><span class="s1">.attr('height', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td119">
+        <p class="p1"><span class="s1">return histoScale(d.values.length)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td120">
+        <p class="p1"><span class="s1">.attr('y', function(d,i,j){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td121">
+        <p class="p1"><span class="s1">ytrac[j] -= histoScale(d.values.length)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td122">
+        <p class="p1"><span class="s1">return ytrac[j]</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td77">
+        <p class="p1"><span class="s1">histVertLines = svgHisto.selectAll('line')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td78">
+        <p class="p1"><span class="s1">.data(linesArr, lineVal)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td123">
+        <p class="p1"><span class="s1">.exit()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td104">
+        <p class="p1"><span class="s1">.remove()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td77">
+        <p class="p1"><span class="s1">histVertLines = svgHisto.selectAll('line')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td78">
+        <p class="p1"><span class="s1">.data(linesArr, lineVal)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">.attr('x1', 0)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td84">
+        <p class="p1"><span class="s1">.attr('x2', 400)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td85">
+        <p class="p1"><span class="s1">.style('stroke', 'black')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td86">
+        <p class="p1"><span class="s1">.style('opacity', 0.6)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td87">
+        <p class="p1"><span class="s1">.attr('stroke-dasharray', (5,5))</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td116">
+        <p class="p1"><span class="s1">.transition()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td117">
+        <p class="p1"><span class="s1">.duration(500)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">.attr('y1', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td124">
+        <p class="p1"><span class="s1">return 200-histoScale(d*0.01*sumMPs)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">.attr('y2', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td124">
+        <p class="p1"><span class="s1">return 200-histoScale(d*0.01*sumMPs)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td102">
+        <p class="p1"><span class="s1">var ytrac = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td103">
+        <p class="p1"><span class="s1">histogramGroup.selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td110">
+        <p class="p1"><span class="s1">.data(function(d) { return d.values; })</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td118">
+        <p class="p1"><span class="s1">.attr('height', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td119">
+        <p class="p1"><span class="s1">return histoScale(d.values.length)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td120">
+        <p class="p1"><span class="s1">.attr('y', function(d,i,j){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td121">
+        <p class="p1"><span class="s1">ytrac[j] -= histoScale(d.values.length)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td122">
+        <p class="p1"><span class="s1">return ytrac[j]</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td111">
+        <p class="p1"><span class="s1">.attr('width', 30)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td112">
+        <p class="p1"><span class="s1">.attr('fill', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td113">
+        <p class="p1"><span class="s1">return partyColors(d.key)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td125">
+        <p class="p1"><span class="s1">//add labels over the histogram</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td126">
+        <p class="p1"><span class="s1">svgHisto.selectAll('#histoGroup')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td127">
+        <p class="p1"><span class="s1">.data(mpTotals)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td128">
+        <p class="p1"><span class="s1">.text(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td129">
+        <p class="p1"><span class="s1">return ''+d.values</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td130">
+        <p class="p1"><span class="s1">.attr('y', function(d, i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td131">
+        <p class="p1"><span class="s1">return ytrac[i] - 10</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td132">
+        <p class="p1"><span class="s1">//add x axis ticks</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td126">
+        <p class="p1"><span class="s1">svgHisto.selectAll('#histoGroup')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td127">
+        <p class="p1"><span class="s1">.data(mpTotals)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td133">
+        <p class="p1"><span class="s1">.text(function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td134">
+        <p class="p1"><span class="s1">return ''+(i+1)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">.attr('y', 20)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">.attr('x', 10)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td135">
+        <p class="p1"><span class="s1">svgHisto.append('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td136">
+        <p class="p1"><span class="s1">.text('terms: ')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td137">
+        <p class="p1"><span class="s1">.attr('x', -30)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td138">
+        <p class="p1"><span class="s1">.attr('y', 220)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">function name(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td139">
+        <p class="p1"><span class="s1">return d.name</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td140">
+        <p class="p1"><span class="s1">function lineVal(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td141">
+        <p class="p1"><span class="s1">return d</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">db.sort(function(a,b){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td142">
+        <p class="p1"><span class="s1">return sortPoints('party', a, b)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td143">
+        <p class="p1"><span class="s1">db = db.filter(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td144">
+        <p class="p1"><span class="s1">return d.expired == 'None'</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td145">
+        <p class="p1"><span class="s1">svg.selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td99">
+        <p class="p1"><span class="s1">.data(db, name)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td146">
+        <p class="p1"><span class="s1">.attr('id', 'mp_dots')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('x', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td148">
+        <p class="p1"><span class="s1">return (50+(Math.floor(i/rows))*xSpacing)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('y', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td149">
+        <p class="p1"><span class="s1">return (50+(i%rows)*ySpacing)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td150">
+        <p class="p1"><span class="s1">.attr('width', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td151">
+        <p class="p1"><span class="s1">return scale*d['recent-mp']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td118">
+        <p class="p1"><span class="s1">.attr('height', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td151">
+        <p class="p1"><span class="s1">return scale*d['recent-mp']</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td112">
+        <p class="p1"><span class="s1">.attr('fill', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td152">
+        <p class="p1"><span class="s1">return partyColors(d.club)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td153">
+        <p class="p1"><span class="s1">.on('mouseover', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td154">
+        <p class="p1"><span class="s1">svg.append('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td155">
+        <p class="p1"><span class="s1">.attr('id', 'tooltip')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td156">
+        <p class="p1"><span class="s1">.attr('font-family', 'Fira Sans')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td157">
+        <p class="p1"><span class="s1">.text(d.name)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td138">
+        <p class="p1"><span class="s1">.attr('x', 200)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td138">
+        <p class="p1"><span class="s1">.attr('y', 450)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td158">
+        <p class="p1"><span class="s1">svg.select('g#termBarGroup').selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td156">
+        <p class="p1"><span class="s1">.data(d['history-mp'].split(':'))</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td159">
+        <p class="p1"><span class="s1">.style('fill-opacity', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td160">
+        <p class="p1"><span class="s1">if (d == 1)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">return 1.0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td161">
+        <p class="p1"><span class="s1">else</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">return 0.3</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td162">
+        <p class="p1"><span class="s1">.on('mouseout', function(){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td163">
+        <p class="p1"><span class="s1">svg.selectAll('#tooltip')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td104">
+        <p class="p1"><span class="s1">.remove()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td158">
+        <p class="p1"><span class="s1">svg.select('g#termBarGroup').selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td164">
+        <p class="p1"><span class="s1">.style('fill-opacity', 0.3)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td165">
+        <p class="p1"><span class="s1">termIndicator = svg.append('g')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td166">
+        <p class="p1"><span class="s1">.attr('id', 'termBarGroup')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td167">
+        <p class="p1"><span class="s1">.attr('transform', 'translate(400, 440)')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td168">
+        <p class="p1"><span class="s1">var termDuration = [1.5,4,4,4,2,4,4]</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td156">
+        <p class="p1"><span class="s1">termIndicator.selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td169">
+        <p class="p1"><span class="s1">.data(termDuration)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td170">
+        <p class="p1"><span class="s1">.attr('id', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td171">
+        <p class="p1"><span class="s1">return 'termBar_' + (i+1)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('x', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td172">
+        <p class="p1"><span class="s1">return d3.sum(termDuration.slice(0, i))*15+i*3</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td150">
+        <p class="p1"><span class="s1">.attr('width', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td173">
+        <p class="p1"><span class="s1">return d*15</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td174">
+        <p class="p1"><span class="s1">.attr('height', 20)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td164">
+        <p class="p1"><span class="s1">.style('fill-opacity', 0.3)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td156">
+        <p class="p1"><span class="s1">termIndicator.selectAll('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td169">
+        <p class="p1"><span class="s1">.data(termDuration)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">.append('text')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">.attr('y', 40)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td175">
+        <p class="p1"><span class="s1">.text(function(d,i) {<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td176">
+        <p class="p1"><span class="s1">return '\'' + ('00' + Math.ceil(91+d3.sum(termDuration.slice(0, i)))%100).substr(-2) })</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('x', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td177">
+        <p class="p1"><span class="s1">return d3.sum(termDuration.slice(0, i))*15+i*3-10</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td178">
+        <p class="p1"><span class="s1">//console.log(test)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td179">
+        <p class="p1"><span class="s1">d3.select('body').select('.vertical')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td152">
+        <p class="p1"><span class="s1">.on('change', function(d) {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td180">
+        <p class="p1"><span class="s1">var val = this.value</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td142">
+        <p class="p1"><span class="s1">svg.selectAll('rect#mp_dots')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td181">
+        <p class="p1"><span class="s1">.attr('fill-opacity', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td182">
+        <p class="p1"><span class="s1">if (d['recent-mp'] &lt;= val)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">return 0.4</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td161">
+        <p class="p1"><span class="s1">else</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">return 1.0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td183">
+        <p class="p1"><span class="s1">svgHisto.selectAll('#histoGroup').selectAll('rect')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td184">
+        <p class="p1"><span class="s1">.attr('fill-opacity', function(d, i,j){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td185">
+        <p class="p1"><span class="s1">if (j &lt; val-1)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">return 0.6</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td161">
+        <p class="p1"><span class="s1">else</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td141">
+        <p class="p1"><span class="s1">return 1</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td186">
+        <p class="p1"><span class="s1">d3.select('p#sliderText')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td187">
+        <p class="p1"><span class="s1">.text(function(){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td68">
+        <p class="p1"><span class="s1">return 'term threshold: ' + val</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td188">
+        <p class="p1"><span class="s1">d3.select('body').selectAll('button')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td189">
+        <p class="p1"><span class="s1">.data(['party', 'terms'])</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td190">
+        <p class="p1"><span class="s1">.on('click', function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td191">
+        <p class="p1"><span class="s1">newd = db.sort(function(a,b){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td192">
+        <p class="p1"><span class="s1">return sortPoints(d, a, b)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td193">
+        <p class="p1"><span class="s1">svg.selectAll('rect').data(newd, name)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td116">
+        <p class="p1"><span class="s1">.transition()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td99">
+        <p class="p1"><span class="s1">.duration(1000)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('x', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td148">
+        <p class="p1"><span class="s1">return (50+(Math.floor(i/rows))*xSpacing)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td147">
+        <p class="p1"><span class="s1">.attr('y', function(d,i){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td149">
+        <p class="p1"><span class="s1">return (50+(i%rows)*ySpacing)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td194">
+        <p class="p1"><span class="s1">parties = d3.nest()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">.key(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td138">
+        <p class="p1"><span class="s1">return d.club</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td58">
+        <p class="p1"><span class="s1">.entries(db)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td195">
+        <p class="p1"><span class="s1">d3.select('select#parties').selectAll('option')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td196">
+        <p class="p1"><span class="s1">.data(parties)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">.enter()</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td197">
+        <p class="p1"><span class="s1">.append('option')</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td128">
+        <p class="p1"><span class="s1">.text(function(d){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td9">
+        <p class="p1"><span class="s1">return d.key</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">})</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td198">
+        <p class="p1"><span class="s1">var selectedItem = d3.select('select#parties').on('change', changeHisto)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td199">
+        <p class="p1"><span class="s1">function partyColors(club){</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td200">
+        <p class="p1"><span class="s1">switch (club) {</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td201">
+        <p class="p1"><span class="s1">case 'Klub Parlamentarny Platforma Obywatelska':</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td202">
+        <p class="p1"><span class="s1">return 'darkorange';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td203">
+        <p class="p1"><span class="s1">case 'Klub Parlamentarny Prawo i Sprawiedliwość':</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td204">
+        <p class="p1"><span class="s1">return 'darkblue';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td205">
+        <p class="p1"><span class="s1">case 'Klub Parlamentarny Polskiego Stronnictwa Ludowego':</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td206">
+        <p class="p1"><span class="s1">return '#4daf4a';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td207">
+        <p class="p1"><span class="s1">case 'Klub Poselski Sojusz Lewicy Demokratycznej':</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td208">
+        <p class="p1"><span class="s1">return 'red';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td209">
+        <p class="p1"><span class="s1">case 'Klub Parlamentarny Zjednoczona Prawica':</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td197">
+        <p class="p1"><span class="s1">return '#377eb8';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td210">
+        <p class="p1"><span class="s1">default:</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td211">
+        <p class="p1"><span class="s1">return 'grey';</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td212">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td213">
+        <p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td214">
+        <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/html&gt;<span class="Apple-converted-space"> </span></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
