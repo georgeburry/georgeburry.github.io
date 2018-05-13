@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-UK"
-title                    : "George Burry"
+title                    : "Data, Development and Distruption"
 title_separator          : "-"
-name                     : "George Burry"
-description              : "An amazing website."
+name                     : "Data, Development and Distruption"
+description              : "Delving into messy datasets, extracting key insights and building novel solutions."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "George Burry"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Python developer with data science skills from New Zealand."
+  bio              : "A Python developer with SQL, JavaScript and Java skills. Working with Pandas, Numpy, Scikit-learn, Keras, Matplotlib and Flask."
   location         : "Bratislava, Slovakia"
   email            :
   uri              :
@@ -224,7 +224,8 @@ whitelist:
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/
+/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
@@ -264,9 +265,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: ""
