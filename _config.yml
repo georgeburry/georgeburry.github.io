@@ -19,7 +19,7 @@ locale                   : "en-UK"
 title                    : "George Burry"
 title_separator          : "-"
 name                     : "George Burry"
-description              : "An amazing website."
+description              : "Data Science and Machine Learning Blog"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "George Burry"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Python developer with data science skills from New Zealand."
+  bio              : "A Python developer with SQL, JavaScript and Java skills. Working with Pandas, Numpy, Scikit-learn, Keras, Matplotlib and Flask."
   location         : "Bratislava, Slovakia"
   email            :
   uri              :
