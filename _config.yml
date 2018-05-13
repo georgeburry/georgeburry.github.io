@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-UK"
-title                    : "George Burry"
+title                    : "Data, Development and Distruption"
 title_separator          : "-"
-name                     : "George Burry"
-description              : "Data Science and Machine Learning Blog"
+name                     : "Data, Development and Distruption"
+description              : "Delving into messy datasets, extracting key insights and building novel solutions."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
