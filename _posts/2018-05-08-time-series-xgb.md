@@ -1,7 +1,7 @@
 ---
 title: "Time-series Prediction using XGBoost"
 date: 2018-05-08
-tags: [data science, machine learning, XGBoost, time-series, prediction]
+tags: [time-series]
 header:
   image: "/images/machine-learning-header.jpg"
 excerpt: "Machine Learning, XGBoost, time-series"
