@@ -44,14 +44,14 @@ print('--- Binary features --- : ', '\n', bin_feats, '\n')
 ```
 The features are separated as follows:
 
---- Numerical features --- :  
- ['ps_ind_01', 'ps_ind_03', 'ps_ind_14', 'ps_ind_15', 'ps_reg_01', 'ps_reg_02', 'ps_reg_03', 'ps_car_11', 'ps_car_12', 'ps_car_13', 'ps_car_14', 'ps_car_15', 'ps_calc_01', 'ps_calc_02', 'ps_calc_03', 'ps_calc_04', 'ps_calc_05', 'ps_calc_06', 'ps_calc_07', 'ps_calc_08', 'ps_calc_09', 'ps_calc_10', 'ps_calc_11', 'ps_calc_12', 'ps_calc_13', 'ps_calc_14']
+  --- Numerical features --- :  
+   ['ps_ind_01', 'ps_ind_03', 'ps_ind_14', 'ps_ind_15', 'ps_reg_01', 'ps_reg_02', 'ps_reg_03', 'ps_car_11', 'ps_car_12', 'ps_car_13', 'ps_car_14', 'ps_car_15', 'ps_calc_01', 'ps_calc_02', 'ps_calc_03', 'ps_calc_04', 'ps_calc_05', 'ps_calc_06', 'ps_calc_07', 'ps_calc_08', 'ps_calc_09', 'ps_calc_10', 'ps_calc_11', 'ps_calc_12', 'ps_calc_13', 'ps_calc_14']
 
---- Categorical features --- :  
- ['ps_ind_02_cat', 'ps_ind_04_cat', 'ps_ind_05_cat', 'ps_car_01_cat', 'ps_car_02_cat', 'ps_car_03_cat', 'ps_car_04_cat', 'ps_car_05_cat', 'ps_car_06_cat', 'ps_car_07_cat', 'ps_car_08_cat', 'ps_car_09_cat', 'ps_car_10_cat', 'ps_car_11_cat']
+  --- Categorical features --- :  
+   ['ps_ind_02_cat', 'ps_ind_04_cat', 'ps_ind_05_cat', 'ps_car_01_cat', 'ps_car_02_cat', 'ps_car_03_cat', 'ps_car_04_cat', 'ps_car_05_cat', 'ps_car_06_cat', 'ps_car_07_cat', 'ps_car_08_cat', 'ps_car_09_cat', 'ps_car_10_cat', 'ps_car_11_cat']
 
---- Binary features --- :  
- ['ps_ind_06_bin', 'ps_ind_07_bin', 'ps_ind_08_bin', 'ps_ind_09_bin', 'ps_ind_10_bin', 'ps_ind_11_bin', 'ps_ind_12_bin', 'ps_ind_13_bin', 'ps_ind_16_bin', 'ps_ind_17_bin', 'ps_ind_18_bin', 'ps_calc_15_bin', 'ps_calc_16_bin', 'ps_calc_17_bin', 'ps_calc_18_bin', 'ps_calc_19_bin', 'ps_calc_20_bin']
+  --- Binary features --- :  
+   ['ps_ind_06_bin', 'ps_ind_07_bin', 'ps_ind_08_bin', 'ps_ind_09_bin', 'ps_ind_10_bin', 'ps_ind_11_bin', 'ps_ind_12_bin', 'ps_ind_13_bin', 'ps_ind_16_bin', 'ps_ind_17_bin', 'ps_ind_18_bin', 'ps_calc_15_bin', 'ps_calc_16_bin', 'ps_calc_17_bin', 'ps_calc_18_bin', 'ps_calc_19_bin', 'ps_calc_20_bin']
 
 ### Data cleansing
 The next step is to check how many missing values there are for each feature type. As a general rule, I like to eliminate features where more than one half of the values are missing.
@@ -66,7 +66,7 @@ cat_feats_cleaned = cat_feats.copy()
 bin_feats_cleaned = bin_feats.copy()
 ```
 
-#### Numerical features
+### Numerical features
 Let's check for missing values (-1) in the numerical feature columns.
 
 ```python
@@ -105,7 +105,7 @@ for col in num_feats_cleaned:
 
 We can be satisfied that no missing values remain.
 
-#### Categorical features
+### Categorical features
 I would like to eliminate any columns that consist of more than one-half missing values (-1). If features contain a relatively small proportion of missing values, these values can be converted to dummy variables and may be a useful part of the analysis.
 
 ```python
@@ -148,7 +148,7 @@ for i in cat_many_missing: cat_feats_cleaned.remove(i)
 
 Remaing missing values will be converted to dummy variables during the feature engineering stage.
 
-#### Binary features
+### Binary features
 Let's now check for missing values among the binary features.
 
 ```python
@@ -171,7 +171,7 @@ Ok I am now satisfied that no missing values remain.
 ### Exploratory data analysis
 In this section, I will first explore the correlation between numerical features and then I will explore the correlation between each feature and the target variable to gain insight into feature importance.
 
-#### Numerical features of float type
+### Numerical features of float type
 
 ```python
 # First of all, we only want to select float values
@@ -223,7 +223,7 @@ plt.show()
 ![png](/images/Kaggle_competition_insurance-claims_files/Kaggle_competition_insurance-claims_40_0.png)
 
 
-#### Numerical features of ordinal type
+ Numerical features of ordinal type
 Now let's check how the ordinal features stack up against each other.
 
 ```python
@@ -274,7 +274,7 @@ The following featuers are returned:
     PS_CALC_13  | Correlation:  -0.000446464531809 | P-value:  0.730510442941
     PS_CALC_14  | Correlation:  0.00136227534312 | P-value:  0.2932615811
 
-#### Categorical features
+### Categorical features
 For checking correlation between the categorical features and the target variable, we can create a crosstab table using Pandas and apply the **Chi-squared** tool to determine a p-value. Once again, if the p-value is more than 0.05, then we could reject that feature.
 
 ```python
@@ -290,7 +290,7 @@ One feature is returned:
 
     PS_CAR_10_CAT  | Chi2:  0.648974774486  | p-value:  0.722897825327
 
-#### Binary features
+### Binary features
 We can do the same for the binary variables as we did for the categorical variables.
 
 ```python
@@ -314,7 +314,7 @@ The following features are returned:
     PS_CALC_19_BIN  | Chi2:  1.79054056273  | p-value:  0.180860314623
     PS_CALC_20_BIN  | Chi2:  0.668511486963  | p-value:  0.413571052218
 
-#### Using classification tools
+### Using classification tools
 Another approach is to use a classication tool - such as the random forest classifier - to determine the importance of each feature. We can achieve this by fitting a model and then calling the feature_importances method.
 
 ```python
@@ -438,7 +438,7 @@ df_engineered['target'].value_counts()
 
 Sure enough, there are many more zeros. We can either over-sample (duplicate the training examples corresponding to the ones) or under-sample (remove training examples corresponding to the zeros).
 
-#### Under-sampling from examples with a target of zero
+### Under-sampling from examples with a target of zero
 I would like to select a sample that makes up half of the original length of the dataset.
 
 ```python
@@ -447,7 +447,7 @@ df_zeros_sample = df_zeros.sample(n=int(rows / 2), random_state=42)
 df_zeros_sample.reset_index(inplace=True, drop=True)
 ```
 
-#### Over-sampling examples with a target of one
+### Over-sampling examples with a target of one
 I will duplicate all of the examples corresponding to ones.
 
 ```python
@@ -458,7 +458,7 @@ for i in range(int((rows / 2) / num_ones)):
     df_ones_dup = df_ones_dup.append(df_ones)
 ```
 
-#### Combining examples into one dataset
+### Combining examples into one dataset
 Now I want to combine the two sample sets together to form one dataset of original length, where the ones and zeros are roughly balanced 1:1.
 
 ```python
@@ -554,8 +554,6 @@ And here are the results that get printed out.
     avg / total       0.60      0.60      0.60    115926
 
 ![png](/images/Kaggle_competition_insurance-claims_files/Kaggle_competition_insurance-claims_83_3.png)
-
-    ======================================
 
 ### Conclusion
 I know there is much room for improvement here. There are some excellent kernals for this competition that use novel techniques to drive up the gini score. I would like to go back over this project and apply new feature engineering techniques and optimise the hyperparameters of the XGBoost classifier. This is nice messy problem with a large variety of feature types and a heavily imbalanced dataset. All in all, a great competition for getting the hands dirty.
