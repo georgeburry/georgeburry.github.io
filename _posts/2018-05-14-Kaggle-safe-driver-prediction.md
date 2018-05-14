@@ -9,7 +9,7 @@ mathjax: ""
 ---
 ## Predicting if a driver will file an insurance claim.
 
-[The Jupyter notebook can be accessed here][https://github.com/georgeburry/safe-driver-prediction/blob/master/Kaggle_competition_insurance-claims.ipynb]
+[The Jupyter notebook can be accessed here](https://github.com/georgeburry/safe-driver-prediction/blob/master/Kaggle_competition_insurance-claims.ipynb)
 
 Nothing ruins the thrill of buying a brand new car more quickly than seeing your new insurance bill. The sting’s even more painful when you know you’re a good driver. It doesn’t seem fair that you have to pay so much if you’ve been cautious on the road for years.
 
