@@ -130,7 +130,7 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
-# Reading Files
+# Reading Files 
 include:
   - .htaccess
   - _pages
