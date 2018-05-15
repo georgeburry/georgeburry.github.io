@@ -458,19 +458,15 @@ for crash in data_sample_geo_df.iterrows():
 ```
 Now I will concatenate the results into the sample dataframe that contains information about each crash, as well as the GPS coordinates.
 
+
 ```python
 weather_df = pd.concat([data_sample_geo_df[['CASE_NUMBER']], pd.DataFrame(weather_data).reset_index(drop=True)], axis=1)
 # I like to save results like these in a CSV file, because there is a limit on the number of API calls
 weather_df.to_csv('weather-data.csv')
 ```
 
-After going through one of the JSON files that was returned to me, I found the section that I want ("currently"). It contains the overall weather conditions, precipitation type (if any) and most importantly, the chance of rain. If the chance is greater than 50%, then I am satisfied that it was probably raining at the time for the sake of this exercise.
+After going through one of the JSON files that was returned to me, I found the section that I want ("currently"). It contains the overall weather conditions, precipitation type (if any) and most importantly, the chance of rain. If the chance is greater than 50%, then I am satisfied that if was raining at the time for the sake of this exercise.
 
-```python
-print(d['currently'])
-```
-
-    {'time': 1351069800, 'summary': 'Clear', 'icon': 'clear-night', 'precipIntensity': 0, 'precipProbability': 0, 'temperature': 53.74, 'apparentTemperature': 53.74, 'dewPoint': 51.68, 'humidity': 0.93, 'pressure': 1018.53, 'windSpeed': 2.68, 'windBearing': 293, 'cloudCover': 0.12, 'visibility': 6.09}
 
 ```python
 import json
@@ -486,66 +482,268 @@ def extract_data(x):
 
 weather_df['precipProb'] = weather_df['result'].apply(extract_data)
 ```
-Now we need to have one dataframe with the chance of precipitation included.
+
+    Expecting value: line 1 column 1 (char 0)
+
+
+One line failed, so I will insert a zero.
+
+
+```python
+weather_df['precipProb'] = weather_df['precipProb'].replace('', 0)
+```
+
 
 ```python
 df_final = data_sample_df.merge(weather_df, left_on='CASE_NUMBER', right_on='CASE_NUMBER', how='outer')
 ```
-Last of all, I am very curious as to what the correlation is between the probability of rain and the severity of the crash. We can use the **pointbiserialr** method from Scipy stats to check the correlation between the rain probability and the severity of the crash (a binary target variable).
+
 
 ```python
-import scipy.stats.pointbiserialr as pointbiserialr
-# check correlation between cols and target
-num_weak_corr = []
-for col in num_feats_cleaned:
-    corr, p = pointbiserialr(df_cleaned[col], df_cleaned['target'])
-    if p > .05:
-        print(col.upper(), ' | Correlation: ', corr, '| P-value: ', p)
-        num_weak_corr.append(col)
+from scipy.stats import pointbiserialr
+
+corr = pointbiserialr(df_final['severity'], df_final['precipProb'])
+corr
 ```
 
-  [Watch this space]
 
-## Plotting nearest intersections to accidents
-We can now use Google Maps Plotter to plot the locations of the accidents on a map of Maryland.
 
-I will first of all do a test to make sure Google can accept two road strings being concatenated, which I pleased to see actually works.
+
+    PointbiserialrResult(correlation=-0.01817849772457154, pvalue=0.56584394823957873)
+
+
+
+## Adding weather to feature set
+
+The precipitation probability feature can be included in a new feature table, along with the other features we used before.
+
 
 ```python
-# Getting the crash latitudes based on the nearest intersection
-data_sample_geo_df['crash_lat'] = gmaps.geocode(data_sample_geo_df['ROAD'].values[0] + ' ' +  data_sample_geo_df['INTERSECT_ROAD'].values[0])[0]['geometry']['location']['lat']
-# Getting the crash longitudes based on the nearest intersection
-data_sample_geo_df['crash_lng'] = gmaps.geocode(data_sample_geo_df['ROAD'].values[0] + ' ' +  data_sample_geo_df['INTERSECT_ROAD'].values[0])[0]['geometry']['location']['lng']
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+# crash severity
+feature_df = pd.DataFrame()
+feature_df['id'] = df_final['CASE_NUMBER']
+feature_df['Time'] = df_final['ACC_TIME_CODE']
+feature_df['Day'] = le.fit_transform(df_final['DAY_OF_WEEK'])
+feature_df['Vehicles'] = df_final['VEHICLE_COUNT'].fillna(0)
+feature_df['One hit'] = le.fit_transform(df_final['COLLISION_WITH_1'])
+feature_df['Tws hits'] = le.fit_transform(df_final['COLLISION_WITH_2'])
+feature_df['Bars'] = df_final['num_bars']
+feature_df['rain'] = df_final['precipProb']
+
+feature_df.head()
 ```
 
-This function concatenates the road and the nearest intersecting road to get the intersections.
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>Time</th>
+      <th>Day</th>
+      <th>Vehicles</th>
+      <th>One hit</th>
+      <th>Tws hits</th>
+      <th>Bars</th>
+      <th>rain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1251037421</td>
+      <td>3</td>
+      <td>6</td>
+      <td>2.0</td>
+      <td>6</td>
+      <td>2</td>
+      <td>35</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1251029176</td>
+      <td>6</td>
+      <td>1</td>
+      <td>2.0</td>
+      <td>6</td>
+      <td>2</td>
+      <td>35</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1280008862</td>
+      <td>5</td>
+      <td>0</td>
+      <td>2.0</td>
+      <td>6</td>
+      <td>4</td>
+      <td>8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1294006103</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>12</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1283001115</td>
+      <td>6</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 
 ```python
-def get_coords(x):    
-    return x[0] + x[1]  # gmaps.geocode(x[0] + ' ' + x[1])[0]['geometry']['location']['lat']
-
-data_sample_geo_df['intersections'] = data_sample_geo_df[['ROAD','INTERSECT_ROAD']].apply(get_coords, axis=1)
+# Let's make sure that there are no missing values because they will cause the algorithm to crash
+feature_df.isna().sum()
 ```
-These functions can be applied to the dataframe to take the intersection information and get coordinates from Google.
+
+
+
+
+    id          0
+    Time        0
+    Day         0
+    Vehicles    0
+    One hit     0
+    Tws hits    0
+    Bars        0
+    rain        0
+    dtype: int64
+
+
+
+I would like to use the Scikit-learn random forest classifier again to fit a model and use that model to determine the importance of each feature, now including the precipitation probability feature.
+
 
 ```python
+from sklearn.ensemble import RandomForestClassifier
+# Sets up a classifier and fits a model to all features of the dataset
+clf = RandomForestClassifier(n_estimators=150, max_depth=8, min_samples_leaf=4, max_features=0.2, n_jobs=-1, random_state=0)
+clf.fit(feature_df.drop(['id'],axis=1), data_sample_df['severity'])
+# We need a list of features as well
+features = feature_df.drop(['id'],axis=1).columns.values
+print("--- COMPLETE ---")
+```
+
+    --- COMPLETE ---
+
+
+Once again, I will plot a bar chart to compare features.
+
+
+```python
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+import plotly.graph_objs as go
+import plotly.tools as tls
+
+x, y = (list(x) for x in zip(*sorted(zip(clf.feature_importances_, features),
+                                                            reverse = False)))
+trace2 = go.Bar(
+    x=x ,
+    y=y,
+    marker=dict(
+        color=x,
+        colorscale = 'Viridis',
+        reversescale = True
+    ),
+    name='Random Forest Feature importance',
+    orientation='h',
+)
+
+layout = dict(
+    title='Ranking of most influential features',
+     width = 900, height = 1500,
+    yaxis=dict(
+        showgrid=False,
+        showline=False,
+        showticklabels=True,
+    ))
+
+fig1 = go.Figure(data=[trace2])
+fig1['layout'].update(layout)
+py.iplot(fig1, filename='plots')
+```
+
+![png](/images/using-apis/newplot2.png)
+
+As you can see, the ranking order is quite different to the last one. The difference here is that a sample of only 1,000 accidents was used instead of the 18,000 accidents that were in the initial dataset. Even though I took a randomised sample of instances, there is a big discrepancies in the data. According to this sample dataset, the number of bars in the area is the biggest determining factor in an accident, quite a bit more than the weather. It would be nice to have weather data for all samples in the dataset, but this requires upgrading the DarkSpy membership to get more calls or pausing the API calls for an hour at time and waiting for more than 18 hours to get a result.
+
+## Creating a Google Maps plot of the accidents
+
+I will now obtain the latitude and longitudes of the nearest intersections of 100 accidents and plot
+them on a Google map, using the Google Map Plotter.
+
+
+```python
+crash_plot_df = data_sample_geo_df.sample(n=100, random_state=0)
+```
+
+
+```python
+crash_plot_df['intersection'] = crash_plot_df['ROAD'] + ' ' + crash_plot_df['INTERSECT_ROAD'] + ' ' + crash_plot_df['COUNTY_NAME'] + ' ' + 'MARYLAND'
+```
+
+
+```python
+# TMakes calls to the gmaps API to get latitude information for an address
 def get_lat(x):
     try:
         return gmaps.geocode(x)[0]['geometry']['location']['lat']
     except:
         return ''
 
+# Makes calls to the gmaps API to get longitute information for an address
 def get_lng(x):
     try:
         return gmaps.geocode(x)[0]['geometry']['location']['lng']
     except:
         return ''
 
-data_sample_geo_df['crash_lat'] = data_sample_geo_df['intersections'].apply(get_lat)
-data_sample_geo_df['crash_lng'] = data_sample_geo_df['intersections'].apply(get_lng)
+# Lat and lon info is then added to the dataframe
+crash_plot_df['crash_lat'] = crash_plot_df['intersection'].apply(get_lat)
+crash_plot_df['crash_lng'] = crash_plot_df['intersection'].apply(get_lng)
 ```
 
-Finally we can use Google Maps Plotter to plot the accidents on a map, which can be displayed in the browser.
+Finally, I will plot all of the points and use the gmplot API to create an HTML file with a map of Maryland and the crash sites.
+
 
 ```python
 from gmplot import gmplot
@@ -555,20 +753,23 @@ state_lat = gmaps.geocode('Maryland')[0]['geometry']['location']['lat']
 state_lng = gmaps.geocode('Maryland')[0]['geometry']['location']['lng']
 
 # Place map
-gmap = gmplot.GoogleMapPlotter(state_lat, state_lng, 7)
+gmap = gmplot.GoogleMapPlotter(state_lat, state_lng, 8)
 
 # Coordinates for Counties
-county_lats = data_sample_geo_df['lat'].values.tolist()
-county_lngs = data_sample_geo_df['lng'].values.tolist()
+county_lats = crash_plot_df['lat'].values.tolist()
+county_lngs = crash_plot_df['lng'].values.tolist()
 
 # Coordinates for crashes
-crash_lats = data_sample_geo_df['crash_lat'].values.tolist()
-crash_lngs = data_sample_geo_df['crash_lng'].values.tolist()
+crash_lats = crash_plot_df['crash_lat'].values.tolist()
+crash_lngs = crash_plot_df['crash_lng'].values.tolist()
 
 # Scatter points
-gmap.scatter(county_lats, county_lngs, 'blue', size=1000, marker=False)
 gmap.scatter(crash_lats, crash_lngs, 'red', size=2500, marker=True)
 
 # Draw
 gmap.draw("my_map.html")
 ```
+
+Here is what you will see when you open up the HTML file.
+
+![png](/images/using-apis/screen_shot.png)
