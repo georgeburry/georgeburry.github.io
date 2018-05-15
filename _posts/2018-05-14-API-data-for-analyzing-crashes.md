@@ -509,7 +509,7 @@ corr
 
     PointbiserialrResult(correlation=-0.01817849772457154, pvalue=0.56584394823957873)
 
-We see here that the correlation is not strong at all, only **-0.018**, with a p-vlaue greater than 0.5. This is a surprising result, as we cannot say that rain causes a statistically significant increase in accidents.
+We see here that the correlation is not strong at all, only **-0.018**, with a p-value **greater than 0.5**. This is a surprising result, as we cannot say that rain causes a statistically significant increase in accidents.
 
 ## Adding weather to feature set
 
