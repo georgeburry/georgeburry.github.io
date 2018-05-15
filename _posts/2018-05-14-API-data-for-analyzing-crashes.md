@@ -704,7 +704,7 @@ py.iplot(fig1, filename='plots')
 
 ![png](/images/using-apis/newplot2.png)
 
-As you can see, the ranking order is quite different to the last one. The difference here is that a sample of only 1,000 accidents was used instead of the 18,000 accidents that were in the initial dataset. Even though I took a randomised sample of instances, there is a big discrepancies in the data. According to this sample dataset, the number of bars in the area is the biggest determining factor in an accident, quite a bit more than the weather. It would be nice to have weather data for all samples in the dataset, but this requires upgrading the DarkSpy membership to get more calls or pausing the API calls for an hour at time and waiting for more than 18 hours to get a result.
+As you can see, the ranking order is quite different to the last one. The difference here is that a sample of only 1,000 accidents was used instead of the 18,000 accidents that were in the initial dataset. Even though I took a randomised sample of instances, there are big discrepancies in the data. According to this sample dataset, the number of bars in the area is the biggest determining factor in an accident, quite a bit more than the weather. It would be nice to have weather data for all samples in the dataset, but either you would need to upgrade to a paid membership on DarkSky.net to get more calls, or you would need to 3600 second sleeps between each batch of API calls, which would amount to more than 18 hours waiting.
 
 ## Creating a Google Maps plot of the accidents
 
