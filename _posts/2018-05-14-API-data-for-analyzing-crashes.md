@@ -493,11 +493,12 @@ One line failed, so I will insert a zero.
 weather_df['precipProb'] = weather_df['precipProb'].replace('', 0)
 ```
 
+Now I should merge the original sample dataset and the weather data.
 
 ```python
 df_final = data_sample_df.merge(weather_df, left_on='CASE_NUMBER', right_on='CASE_NUMBER', how='outer')
 ```
-
+I can use the Pointbiserialr tool from Scipy stats to calculate the correlation and the p-value between the binary values of the 'severity' and the continuous values of the 'precipProb' (probability of precipitation) column.
 
 ```python
 from scipy.stats import pointbiserialr
@@ -506,12 +507,9 @@ corr = pointbiserialr(df_final['severity'], df_final['precipProb'])
 corr
 ```
 
-
-
-
     PointbiserialrResult(correlation=-0.01817849772457154, pvalue=0.56584394823957873)
 
-
+We see here that the correlation is not strong at all, only **-0.018**, with a p-vlaue greater than 0.5. This is a surprising result, as we cannot say that rain causes a statistically significant increase in accidents.
 
 ## Adding weather to feature set
 
