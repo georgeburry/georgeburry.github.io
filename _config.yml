@@ -19,7 +19,7 @@ locale                   : "en-UK"
 title                    : "George Burry"
 title_separator          : "-"
 name                     : "George Burry"
-description              : "By data science portfolio and blog"
+description              : "Data Science and Machine Learning"
 url                      : "http://www.georgeburry.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -130,7 +130,7 @@ author:
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
 
-# Reading Files 
+# Reading Files
 include:
   - .htaccess
   - _pages
