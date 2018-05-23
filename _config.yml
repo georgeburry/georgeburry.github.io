@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "George Burry"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A Python developer with SQL, JavaScript and Java skills. Working with Pandas, Numpy, Scikit-learn, Keras, Matplotlib and Flask."
+  bio              : "A Python developer with data science and machine learning skills. Experience with Pandas, Numpy, Scipy, Matplotlib, Scikit-learn, Keras and Flask."
   location         : "Bratislava, Slovakia"
   email            :
   uri              :
