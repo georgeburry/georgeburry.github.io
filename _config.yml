@@ -20,7 +20,7 @@ title                    : "George Burry"
 title_separator          : "-"
 name                     : "George Burry"
 description              : "Data Science and Machine Learning"
-url                      : "http://www.georgeburry.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://www.georgeburry.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -101,7 +101,7 @@ author:
   name             : "George Burry"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A Python developer with data science and machine learning skills. Experience with Pandas, Numpy, Scipy, Matplotlib, Scikit-learn, Keras and Flask."
-  location         : "Bratislava, Slovakia"
+  location         : "Delft, Netherlands"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
